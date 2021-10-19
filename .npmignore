@@ -1,0 +1,9 @@
+/docs
+/examples
+/node_modules
+/test
+
+.editorconfig
+.env
+.gitattributes
+jsdoc.json
