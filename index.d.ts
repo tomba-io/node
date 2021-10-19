@@ -1,4 +1,4 @@
-declare module "tomba-node" {
+declare module "tomba" {
   export class Client {
     /**
      * Set endpoint.
