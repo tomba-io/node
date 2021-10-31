@@ -2,7 +2,7 @@
   "name": "tomba",
   "homepage": "https://tomba.io",
   "description": "Tomba.io is an Email Finder for B2B sales and email marketing",
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "license": "Apache-2.0",
   "main": "./index.js",
   "types": "./index.d.ts",
