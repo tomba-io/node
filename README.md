@@ -1,6 +1,6 @@
 # [<img src="https://app.tomba.io/tomba/f250de39816043cfc8f5578fa078a79e.svg" alt="Tomba" width="25"/>](https://tomba.io/) Tomba Email Finder Node Client Library
 
-This is the official Node client library for the [Tomba.io](https://tomba.io.io) Email Finder API,
+This is the official Node client library for the [Tomba.io](https://tomba.io) Email Finder API,
 allowing you to:
 
 - [Domain Search.](https://tomba.io/domain-search) (Search emails are based on the website You give one domain name and it returns all the email addresses found on the internet.)
@@ -21,6 +21,12 @@ To install via [NPM](https://www.npmjs.com/package/tomba):
 
 ```bash
 npm install tomba --save
+```
+
+To install via [YARN](https://yarnpkg.com/package/tomba):
+
+```bash
+yarn add tomba 
 ```
 
 ## Usage
