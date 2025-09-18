@@ -2,6 +2,9 @@ import { TombaClient } from "./TombaClient";
 import { TombaException } from "./exception";
 import { Account } from "./services/account";
 import { Domain } from "./services/domain";
+import { Enrichment } from "./services/enrichment";
+import { Similar } from "./services/similar";
+import { Technology } from "./services/technology";
 import { Finder } from "./services/finder";
 import { Verifier } from "./services/verifier";
 import { Sources } from "./services/sources";
@@ -19,6 +22,9 @@ export {
     TombaException,
     Account,
     Domain,
+    Enrichment,
+    Similar,
+    Technology,
     Finder,
     Verifier,
     Sources,
