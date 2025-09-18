@@ -1,6 +1,11 @@
 import { Service } from "../service";
 import { TombaException } from "../exception";
 import { DomainSearchResponse } from "../types/domain-search";
+
+/**
+ * Domain Service
+ * @see {@link https://docs.tomba.io/api/finder#domain-search}
+ */
 export class Domain extends Service {
     /**
      * Domain Search

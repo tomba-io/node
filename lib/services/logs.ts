@@ -1,6 +1,11 @@
 import { Service } from "../service";
 import { TombaException } from "../exception";
 
+/**
+ * Logs Service
+ *
+ * @see {@link https://docs.tomba.io/api/account#retrieve-api-logs}
+ */
 export class Logs extends Service {
     /**
      * get Logs

@@ -1,6 +1,11 @@
 import { Service } from "../service";
 import { TombaException } from "../exception";
 
+/**
+ * Status Service
+ *
+ * @see {@link https://docs.tomba.io/api/~endpoints#domain-status}
+ */
 export class Status extends Service {
     /**
      * Domain status

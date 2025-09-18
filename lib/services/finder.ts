@@ -1,6 +1,11 @@
 import { Service } from "../service";
 import { TombaException } from "../exception";
 import type { FinderResponse } from "../types/finder";
+
+/**
+ * Finder Service
+ * @see {@link https://docs.tomba.io/api/finder}
+ */
 export class Finder extends Service {
     /**
      * Email Finder
@@ -12,6 +17,7 @@ export class Finder extends Service {
      * @param {string} firstName
      * @param {string} lastName
      * @throws {TombaException}
+     * @see {@link https://docs.tomba.io/api/finder#email-finder}
      * @returns {Promise}
      */
     async emailFinder(
@@ -63,6 +69,7 @@ export class Finder extends Service {
      *
      * @param {string} url
      * @throws {TombaException}
+     * @see {@link https://docs.tomba.io/api/finder#author-finder}
      * @returns {Promise}
      */
     async authorFinder(url: string): Promise<FinderResponse> {
@@ -93,6 +100,7 @@ export class Finder extends Service {
      *
      * @param {string} url
      * @throws {TombaException}
+     * @see {@link https://docs.tomba.io/api/finder#linkedin-finder}
      * @returns {Promise}
      */
     async linkedinFinder(url: string): Promise<FinderResponse> {
@@ -123,6 +131,7 @@ export class Finder extends Service {
      *
      * @param {string} email
      * @throws {TombaException}
+     * @see {@link https://docs.tomba.io/api/finder#email-enrichment}
      * @returns {Promise}
      */
     async emailEnrichment(email: string): Promise<FinderResponse> {

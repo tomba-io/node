@@ -2,6 +2,11 @@ import { Service } from "../service";
 import { TombaException } from "../exception";
 import { VerifierResponse } from "../types/verifier";
 
+/**
+ * Verifier Service
+ *
+ * @see {@link https://docs.tomba.io/api/verifier#email-verifier}
+ */
 export class Verifier extends Service {
     /**
      * Email Verifier

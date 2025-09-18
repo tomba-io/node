@@ -2,6 +2,11 @@ import { Service } from "../service";
 import { TombaException } from "../exception";
 import { TombaAccountResponse } from "../types/account";
 
+/**
+ * Account Service
+ *
+ * @see {@link https://docs.tomba.io/api/account#get-account}
+ */
 export class Account extends Service {
     /**
      * Get Account

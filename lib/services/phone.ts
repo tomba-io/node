@@ -2,11 +2,18 @@ import { Service } from "../service";
 import { TombaException } from "../exception";
 import { PhoneResponse } from "../types/phone";
 
+/**
+ * Phone Service
+ *
+ * @see {@link https://docs.tomba.io/api/phone}
+ */
 export class Phone extends Service {
     /**
      * Phone Finder
      * Search for phone numbers based on email, domain, or LinkedIn URL.
      * @param {Object} params - { email, domain, linkedin }
+     * @throws {TombaException}
+     * @see {@link https://docs.tomba.io/api/phone#phone-finder}
      * @returns {Promise<PhoneResponse>} API response
      */
     async finder(params: {
@@ -32,6 +39,8 @@ export class Phone extends Service {
      * Validate a phone number and retrieve its associated information.
      * @param {string} phone - The phone number to validate
      * @param {string} [country_code] - Optional country code
+     * @throws {TombaException}
+     * @see {@link https://docs.tomba.io/api/phone#phone-validator}
      * @returns {Promise<Object>} API response
      */
     async validator(phone: string, country_code?: string) {

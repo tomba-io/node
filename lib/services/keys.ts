@@ -2,6 +2,11 @@ import { Service } from "../service";
 import { TombaException } from "../exception";
 import { NewResponse } from "../types/new";
 
+/**
+ * Keys Service
+ *
+ * @see {@link https://docs.tomba.io/api/keys}
+ */
 export class Keys extends Service {
     /**
      * Get your keys.

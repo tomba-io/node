@@ -2,6 +2,10 @@ import { Service } from "../service";
 import { TombaException } from "../exception";
 import { EmailCountResponse } from "../types/email-count";
 
+/**
+ * Count Service
+ * @see {@link https://docs.tomba.io/api/finder#email-count}
+ */
 export class Count extends Service {
     /**
      * get Email Count

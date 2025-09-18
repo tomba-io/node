@@ -2,6 +2,11 @@ import { Service } from "../service";
 import { TombaException } from "../exception";
 import { Source } from "../types/source";
 
+/**
+ * Sources Service
+ *
+ * @see {@link https://docs.tomba.io/api/~endpoints#email-sources}
+ */
 export class Sources extends Service {
     /**
      * Email Sources

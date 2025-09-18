@@ -2,6 +2,11 @@ import { Service } from "../service";
 import { TombaException } from "../exception";
 import { NewResponse } from "../types/new";
 
+/**
+ * Leads Attributes Service
+ *
+ * @see {@link https://docs.tomba.io/api/lead-attributes}
+ */
 export class LeadsAttributes extends Service {
     /**
      * Get Lead Attributes
