@@ -3,12 +3,12 @@
 This is the official Node client library for the [Tomba.io](https://tomba.io) Email Finder API,
 allowing you to:
 
--   [Domain Search.](https://tomba.io/domain-search) (Search emails are based on the website You give one domain name and it returns all the email addresses found on the internet.)
+-   [Domain Search](https://tomba.io/domain-search) (Search emails are based on the website You give one domain name and it returns all the email addresses found on the internet.)
 -   [Email Finder](https://tomba.io/email-finder) (This API endpoint generates or retrieves the most likely email address from a domain name, a first name and a last name..)
--   [Email Verifier.](https://tomba.io/email-verifier) (checks the deliverability of a given email address, verifies if it has been found in our database, and returns their sources.)
--   [Email Enrichment.](https://tomba.io/enrichment) (Locate and include data in your emails.)
--   [Author Finder.](https://tomba.io/author-finder) (Instantly discover the email addresses of article authors.)
--   [LinkedIn Finder.](https://tomba.io/linkedin-finder) (Instantly discover the email addresses of Linkedin URLs.)
+-   [Email Verifier](https://tomba.io/email-verifier) (checks the deliverability of a given email address, verifies if it has been found in our database, and returns their sources.)
+-   [Email Enrichment](https://tomba.io/enrichment) (Locate and include data in your emails.)
+-   [Author Finder](https://tomba.io/author-finder) (Instantly discover the email addresses of article authors.)
+-   [LinkedIn Finder](https://tomba.io/linkedin-finder) (Instantly discover the email addresses of Linkedin URLs.)
 
 ## Getting Started
 
@@ -32,22 +32,24 @@ yarn add tomba
 
 ## Usage
 
-### Domain Search
+### TypeScript Support
 
-get email addresses found on the internet.
+Tomba now supports TypeScript out of the box. You can use ES6 imports and get full type safety and autocompletion.
 
-```js
-const tomba = require("tomba");
+#### Example
+
+```ts
+import { TombaClient, Domain } from "tomba";
 
 // Init Tomba
-let client = new tomba.Client();
-
-let domain = new tomba.Domain(client);
+const client = new TombaClient();
+const domain = new Domain(client);
 
 client
     .setKey("ta_xxxx") // Your Key
     .setSecret("ts_xxxx"); // Your Secret
-let result = domain.domainSearch("stripe.com");
+
+const result = domain.domainSearch("stripe.com");
 
 result
     .then((response) => {
@@ -58,17 +60,19 @@ result
     });
 ```
 
+See more TypeScript examples in the `examples/` folder (look for `.ts` files).
+
 ### Email Finder
 
 Find the verified email address of any professional.
 
 ```js
-const tomba = require("tomba");
+import { TombaClient, Finder } from "tomba";
 
 // Init Tomba
-let client = new tomba.Client();
+let client = new TombaClient();
 
-let finder = new tomba.Finder(client);
+let finder = new Finder(client);
 
 client
     .setKey("ta_xxxx") // Your Key
@@ -89,12 +93,12 @@ result
 Verify the validity of any professional email address with the most complete email checker.
 
 ```js
-const tomba = require("tomba");
+import { TombaClient, Verifier } from "tomba";
 
 // Init Tomba
-let client = new tomba.Client();
+let client = new TombaClient();
 
-let verifier = new tomba.Verifier(client);
+let verifier = new Verifier(client);
 
 client
     .setKey("ta_xxxx") // Your Key
