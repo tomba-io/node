@@ -15,15 +15,15 @@ export class Similar extends Service {
      * @see {@link https://docs.tomba.io/api/~endpoints#similar}
      * @returns {Promise<SimilarResponse>} API response
      */
-    async websites(websites: string): Promise<SimilarResponse> {
-        if (!websites) {
-            throw new TombaException("Websites is required.");
+    async websites(domain: string): Promise<SimilarResponse> {
+        if (!domain) {
+            throw new TombaException("Domain is required.");
         }
         return await this.client.call(
             "GET",
             "/similar",
             { "content-type": "application/json" },
-            { websites }
+            { domain }
         );
     }
 }
