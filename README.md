@@ -9,6 +9,9 @@ allowing you to:
 -   [Email Enrichment](https://tomba.io/enrichment) (Locate and include data in your emails.)
 -   [Author Finder](https://tomba.io/author-finder) (Instantly discover the email addresses of article authors.)
 -   [LinkedIn Finder](https://tomba.io/linkedin-finder) (Instantly discover the email addresses of Linkedin URLs.)
+-   [Reveal](https://app.tomba.io/reveal) (Find relevant companies at scale.)
+-   [Phone Finder](https://tomba.io/phone-finder) (Search phone numbers based on email address, website, or LinkedIn profile URL.)
+-   [Phone Validator](https://tomba.io/phone-validator) (Validate phone numbers & check carrier information.)
 
 ## Getting Started
 
