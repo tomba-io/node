@@ -45,6 +45,7 @@ export * from "./types/leads-lists";
 export * from "./types/leads";
 export * from "./types/new";
 export * from "./types/phone";
+export * from "./types/similar";
 export * from "./types/source";
 export * from "./types/technology";
 export * from "./types/usage";
