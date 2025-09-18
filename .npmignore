@@ -1,7 +1,11 @@
 /docs
+/build
 /examples
 /node_modules
 /test
+/tests
+/coverage
+/tsconfig.json
 
 .editorconfig
 .env
