@@ -1,5 +1,7 @@
 /**
- * Similar Types
+ * Response structure for Similar Service
+ *
+ * @public
  */
 export interface SimilarResponse {
     data?: SimilarData[];
