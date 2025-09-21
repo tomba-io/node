@@ -6,8 +6,13 @@
 /tests
 /coverage
 /tsconfig.json
-
+/.github
 .editorconfig
 .env
 .gitattributes
 jsdoc.json
+.vscode
+.DS_Store
+yarn-debug.log*
+yarn-error.log*
+/examples
