@@ -9,12 +9,14 @@ import { TombaException } from "./exception";
 export class TombaClient {
     endpoint: string;
     headers: Record<string, string>;
+    timeout: number;
 
     constructor() {
         this.endpoint = "https://api.tomba.io/v1";
         this.headers = {
-            "x-sdk-version": "tomba:nodejs:v1.0.4",
+            "x-sdk-version": "tomba:nodejs:v1.0.5",
         };
+        this.timeout = 30000;
     }
 
     /**
@@ -63,6 +65,17 @@ export class TombaClient {
         return this;
     }
 
+    /**
+     * Set timeout in milliseconds.
+     *
+     * @param {number} timeout
+     *
+     */
+    setTimeout(timeout: number): this {
+        this.timeout = timeout;
+        return this;
+    }
+
     async call(
         method: string,
         path: string = "",
@@ -85,6 +98,7 @@ export class TombaClient {
                     ? formData
                     : params,
             responseType: responseType as any,
+            timeout: this.timeout,
         };
         try {
             let response: AxiosResponse = await axios(options);
