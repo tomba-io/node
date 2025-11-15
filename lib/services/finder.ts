@@ -18,7 +18,7 @@ export class Finder extends Service {
      * @param {string} lastName
      * @throws {TombaException}
      * @see {@link https://docs.tomba.io/api/finder#email-finder}
-     * @returns {Promise}
+     * @returns {Promise<FinderResponse>}
      */
     async emailFinder(
         domain: string,
