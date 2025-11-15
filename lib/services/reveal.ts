@@ -31,7 +31,7 @@ export class Reveal {
     async companiesSearch(
         params: CompaniesSearchRequest
     ): Promise<CompaniesSearchResponse> {
-        const path = "/reveal/companies-search";
+        const path = "/reveal/search";
 
         return await this.client.call("POST", path, {}, params);
     }
