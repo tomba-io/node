@@ -1,6 +1,6 @@
 import { Service } from "../service";
 import { TombaException } from "../exception";
-import { TombaAccountResponse } from "../types/account";
+import { TombaAccount } from "../types/account";
 
 /**
  * Account Service
@@ -14,9 +14,9 @@ export class Account extends Service {
      * Returns information about the current account.
      *
      * @throws {TombaException}
-     * @returns {Promise<TombaAccountResponse>} The account response object.
+     * @returns {Promise<TombaAccount>} The account response object.
      */
-    async getAccount(): Promise<TombaAccountResponse> {
+    async getAccount(): Promise<TombaAccount> {
         const path = "/me";
         const payload = {};
         return await this.client.call(

@@ -3,6 +3,9 @@
  *
  * @public
  */
+export interface TombaAccount {
+    data?: TombaAccountResponse;
+}
 export interface TombaAccountResponse {
     user_id?: number;
     secret_token?: string;
