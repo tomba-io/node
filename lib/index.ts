@@ -16,6 +16,7 @@ import { Phone } from "./services/phone";
 import { Keys } from "./services/keys";
 import { LeadsLists } from "./services/leads-lists";
 import { LeadsAttributes } from "./services/leads-attributes";
+import { Reveal } from "./services/reveal";
 
 export {
     TombaClient,
@@ -36,12 +37,14 @@ export {
     Keys,
     LeadsLists,
     LeadsAttributes,
+    Reveal,
 };
 
 // Types
 export * from "./types/account";
 export * from "./types/attributes";
 export * from "./types/bulks";
+export * from "./types/companies-search";
 export * from "./types/domain-search";
 export * from "./types/email-count";
 export * from "./types/finder";
