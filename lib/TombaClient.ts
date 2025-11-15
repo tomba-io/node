@@ -14,7 +14,7 @@ export class TombaClient {
     constructor() {
         this.endpoint = "https://api.tomba.io/v1";
         this.headers = {
-            "x-sdk-version": "tomba:nodejs:v1.0.6",
+            "x-sdk-version": "tomba:nodejs:v1.0.7",
         };
         this.timeout = 30000;
     }
