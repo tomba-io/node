@@ -61,6 +61,8 @@ export interface Organization {
     total_similar?: number;
     organization?: string;
     company_type?: string;
+    keywords?: string[];
+    ranking?: number;
     whois?: Whois;
 }
 
